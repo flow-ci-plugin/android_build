@@ -1,0 +1,27 @@
+
+name: android_build
+version: 0.0.1
+language: android
+description: Android build task
+public: true
+tags:
+  - android
+  - build
+inputs:
+  - name: FLOW_ENABLE_FAILURE
+    editable: true
+    options:
+      - TRUE
+      - FALSE
+  - name: FLOW_ANDROID_GRADLE_TASK
+    editable: true
+  - name: FLOW_ANDROID_GRADLEW_PATH
+    editable: true
+  - name: FLOW_ANDROID_GRADLE_BUILD_PATH
+    editable: true
+outputs:
+script_path: ./run.sh  
+  
+template: |  
+  
+  

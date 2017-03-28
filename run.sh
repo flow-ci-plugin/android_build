@@ -61,6 +61,9 @@ else
 	echo "Android Gradle Task has been configed, flow.ci will be run $GARDLE_SCRIPT $FLOW_ANDROID_GRADLE_TASK."
 fi
 
+# Set JVM memory
+echo "org.gradle.jvmargs=-Xmx5g -Xms5g" >> ~/.gradle/gradle.properties
+
 flow_cmd "$GARDLE_SCRIPT clean" --echo --assert
 flow_cmd "$GARDLE_SCRIPT $FLOW_ANDROID_GRADLE_TASK" --echo --assert
 

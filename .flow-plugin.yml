@@ -11,8 +11,8 @@ inputs:
   - name: FLOW_ENABLE_FAILURE
     editable: true
     options:
-      - TRUE
-      - FALSE
+      - true='TRUE'
+      - false='FALSE'
   - name: FLOW_ANDROID_GRADLE_TASK
     editable: true
   - name: FLOW_ANDROID_GRADLEW_PATH

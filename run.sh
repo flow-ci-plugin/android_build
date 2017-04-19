@@ -39,8 +39,6 @@ else
   echo "flow.ci will be run $gradle_cmd $FLOW_ANDROID_GRADLE_TASK"
 fi
 
-# Set JVM memory
-echo "org.gradle.jvmargs=-Xmx5g -Xms5g" >> ~/.gradle/gradle.properties
 flow_cmd "$gradle_cmd $FLOW_ANDROID_GRADLE_TASK" --echo --assert
 
 # Print APK files

@@ -2,9 +2,7 @@
 name: android_build
 version: 0.0.1
 language: android
-description: |
-  "Android gradle 构建插件，默认使用 gradlew 构建方式构建，建议先使用 gradlew build 命令在本地调试"
-
+description: "Android gradle 构建插件，默认使用 gradlew 构建方式构建，建议先使用 gradlew build 命令在本地调试"
 public: true
 
 tags:

@@ -2,23 +2,22 @@
 name: android_build
 version: 0.0.1
 language: android
-description: Android build task
+description: |
+  "Android gradle 构建插件，默认使用 gradlew 构建方式构建，建议先使用 gradlew build 命令在本地调试"
+
 public: true
+
 tags:
   - android
   - build
+  
 inputs:
-  - name: FLOW_ENABLE_FAILURE
-    editable: true
-    options:
-      - true='TRUE'
-      - false='FALSE'
   - name: FLOW_ANDROID_GRADLE_TASK
     editable: true
-  - name: FLOW_ANDROID_GRADLEW_PATH
-    editable: true
-  - name: FLOW_ANDROID_GRADLE_BUILD_PATH
-    editable: true
+    desc_cn: "使用 gradlew 构建所需要的参数 默认为 build"
+    desc_en: "Arguments for gradlew"
+    default: "build"
+
 outputs:
 script_path: ./run.sh  
   

@@ -8,15 +8,18 @@ public: true
 tags:
   - android
   - build
-  
+ 
 inputs:
-  - name: FLOW_ANDROID_GRADLE_TASK
-    editable: true
-    desc_cn: "使用 gradlew 构建所需要的参数 默认为 build"
-    desc_en: "Arguments for gradlew"
-    default: "build"
+ 
+#inputs:
+#  - name: FLOW_ANDROID_GRADLE_TASK
+#    editable: true
+#    desc_cn: "使用 gradlew 构建所需要的参数 默认为 build"
+#    desc_en: "Arguments for gradlew"
+#    default: "build"
 
 outputs:
+
 script_path: ./run.sh  
   
 template: |  

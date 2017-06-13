@@ -33,7 +33,7 @@ fi
 
 # Check gradle task
 if [[ -z $FLOW_ANDROID_GRADLE_TASK ]]; then
-  FLOW_ANDROID_GRADLE_TASK="build"
+  FLOW_ANDROID_GRADLE_TASK="build -x lint"
   echo "flow.ci will be run $gradle_cmd $FLOW_ANDROID_GRADLE_TASK as default"
 else
   echo "flow.ci will be run $gradle_cmd $FLOW_ANDROID_GRADLE_TASK"
